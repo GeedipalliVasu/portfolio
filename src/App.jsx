@@ -3,7 +3,8 @@ import './App.css'
 import {  Mail } from 'lucide-react'
 import { LuGithub } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
-
+import ragimg from "./assets/rag.png"; 
+import agri from "./assets/agri.png";
 
 export default function App() {
 
@@ -40,7 +41,70 @@ export default function App() {
           </div>
         </div>
       </section>
+    <section className='projects' id='projects'>
+      <div className='container'>
+        <h2>Featured Projects</h2>
 
+        <div className="project">
+          <div className="project-content">
+            <span className='project-data'>Jan 2025 – Mar 2025</span>
+            <h3>RAG System for Legal Question Answering</h3>
+            <p>Developed a production-grade Retrieval-Augmented Generation pipeline using Qwen 3-4B and FAISS to answer queries on Indian constitutional articles with 88% retrieval accuracy.</p>
+            <div className="achievements">
+              <p><strong>Key Achievements:</strong></p>
+              <ul>
+                <li>88% retrieval accuracy on 500-article test set</li>
+                <li>Sub-2 second query response time</li>
+                <li>30% reduction in irrelevant retrievals</li>
+              </ul>
+            </div>
+            <a href="https://github.com/GeedipalliVasu/Legal-Rag" target='_blank' rel='noopener noreferrer'>
+            <LuGithub size={18} />View Code
+            </a>
+            <div className="tech-stack">
+            {['Qwen', 'FAISS', 'React', 'Express', 'MongoDB', 'LangChain'].map((tech) => (
+            <span key={tech} className="tech-tag">{tech}
+            </span>
+            ))}
+            </div>
+          </div>
+          <div className="project-name">
+            <img src={ragimg} alt="RAGIMG" />
+          </div>
+        </div>
+        <div className='project project-reverse'>
+            <div className="project-image">
+              <img src={agri} alt="AGRI-IMG"/>
+            </div>
+            <div className="project-content">
+              <span className='project-date'>Aug 2024 – Nov 2024</span>
+              <h3>Agri-LLaVA: AI Plant Disease Detection</h3>
+              <p>Engineered an AI-powered system combining CNN classifiers with Stable Diffusion to detect plant diseases and predict progression, enabling farmers to take preventive action 1-2 growth stages earlier.</p>
+              <div className="achievements">
+                <p><strong>Key Achievements:</strong></p>
+                <ul>
+                  <li>91% validation accuracy on 3,000-image dataset</li>
+                  <li>Real-time disease progression visualization</li>
+                  <li>Interactive chatbot with sub-3 second response time</li>
+                </ul>
+              </div>
+              <a href="https://github.com/GeedipalliVasu/Agri-Llava-Project" target='_blank' rel='noopener noreferrer'>
+              <LuGithub size={18}/> View Code
+              </a>
+              <div className="tech-stack">
+                <div className="tech-stack">
+                  {['PyTorch', 'CNN', 'Stable Diffusion', 'Flask', 'OpenCV', 'Python'].map((tech) => (
+                  <span key={tech} className="tech-tag">
+                  {tech}
+                  </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
     </div>
   )
 }
