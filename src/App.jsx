@@ -47,7 +47,7 @@ export default function App() {
 
         <div className="project">
           <div className="project-content">
-            <span className='project-data'>Jan 2025 – Mar 2025</span>
+            <span className='project-date'>Jan 2025 – Mar 2025</span>
             <h3>RAG System for Legal Question Answering</h3>
             <p>Developed a production-grade Retrieval-Augmented Generation pipeline using Qwen 3-4B and FAISS to answer queries on Indian constitutional articles with 88% retrieval accuracy.</p>
             <div className="achievements">
@@ -58,7 +58,7 @@ export default function App() {
                 <li>30% reduction in irrelevant retrievals</li>
               </ul>
             </div>
-            <a href="https://github.com/GeedipalliVasu/Legal-Rag" target='_blank' rel='noopener noreferrer'>
+            <a className="project-link" href="https://github.com/GeedipalliVasu/Legal-Rag" target='_blank' rel='noopener noreferrer'>
             <LuGithub size={18} />View Code
             </a>
             <div className="tech-stack">
@@ -68,14 +68,12 @@ export default function App() {
             ))}
             </div>
           </div>
-          <div className="project-name">
+          <div className="project-image">
             <img src={ragimg} alt="RAGIMG" />
           </div>
         </div>
         <div className='project project-reverse'>
-            <div className="project-image">
-              <img src={agri} alt="AGRI-IMG"/>
-            </div>
+            
             <div className="project-content">
               <span className='project-date'>Aug 2024 – Nov 2024</span>
               <h3>Agri-LLaVA: AI Plant Disease Detection</h3>
@@ -88,7 +86,7 @@ export default function App() {
                   <li>Interactive chatbot with sub-3 second response time</li>
                 </ul>
               </div>
-              <a href="https://github.com/GeedipalliVasu/Agri-Llava-Project" target='_blank' rel='noopener noreferrer'>
+              <a className="project-link" href="https://github.com/GeedipalliVasu/Agri-Llava-Project" target='_blank' rel='noopener noreferrer'>
               <LuGithub size={18}/> View Code
               </a>
               <div className="tech-stack">
@@ -101,10 +99,12 @@ export default function App() {
                 </div>
               </div>
             </div>
+            <div className="project-image">
+              <img src={agri} alt="AGRI-IMG"/>
+            </div>
         </div>
       </div>
     </section>
-    
     </div>
   )
 }
