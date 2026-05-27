@@ -52,3 +52,92 @@
   color:#0D9488;
 }
 
+.hero {
+ min-height:100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url("./assets/first\ back.png");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ padding-top: 20px;
+ text-align: left;
+}
+
+.hero .container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 130px;
+}
+.hero h1{
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom:16px;
+  color: #1E293B;
+  line-height: 1.2;
+  font-family:"Playfair Display",serif;
+}
+
+.hero p{
+  font-size: 1.25rem;
+  color:#64748B;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-family: Lato,sans-serif;
+}
+
+.btn{
+  padding: 12px 24px;
+  border-radius:8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+ background-color: #0D9488;
+ color: white;
+}
+
+btn-primary:hover {
+ background-color: #0a7a6f;
+ transform: translateY(-2px);
+}
+
+.btn-secondary {
+ background-color: transparent;
+ color: #0D9488;
+ border: 2px solid #0D9488;
+}
+
+btn-secondary:hover {
+ background-color: rgba(13, 148, 136, 0.1);
+}
+
+.social-links {
+ padding-top:40px; 
+ display: flex;
+ gap: 1.5rem;
+}
+
+social-links a {
+ color: #64748B;
+ transition: color 0.3s;
+}
+
+.social-links a:hover {
+ color: #0D9488;
+}
+
+
