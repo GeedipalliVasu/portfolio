@@ -145,12 +145,12 @@ export default function App() {
         </div>
       </div>
     </section>
-    <section className='education'>
+    {/* <section className='education'>
       <div className="container">
         <h2>Education</h2>
       </div>
 
-    </section>
+    </section> */}
     </div>
   )
 }
