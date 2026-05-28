@@ -26,7 +26,7 @@ export default function App() {
           <h1>AI/ML Engineer</h1>
           <p>Building intelligent systems that solve real-world problems. Specialized in Retrieval-Augmented Generation, Computer Vision, and Deep Learning architectures.</p>
           <div className='button-group'>
-            <button className='btn btn-primary'>View My Work</button>
+            <a className='btn btn-primary' id='projects' href="#projects">View My Work</a>
             <button className='btn btn-secondary'>Download Resume</button>
           </div>
           <div className='social-links'>
@@ -106,7 +106,7 @@ export default function App() {
         </div>
       </div>
     </section>
-    <section className='skills'>
+    <section className='skills' id='skills'>
       <div className="container">
         <h2>Technical Skills</h2>
         <div className="skills-grid">
@@ -179,7 +179,25 @@ export default function App() {
         </div>
       </div>                  
     </section>
-    </div>
-  )
+    <section id='contact' className='contact'>
+      <div className="container">
+        <h2>Let's Connect</h2>
+        <p>I'm always interested in discussing AI/ML projects, internship opportunities, and innovative ideas. Feel free to reach out!</p>
+        <div className="contact-buttons">
+          <a  href="mailto:vasu.geedipalli1@gmail.com" className="project-link"  target='_blank' rel='noopener noreferre'>
+            <Mail size={20} /> Email Me
+          </a>
+          <a className="project-link" href="https://www.linkedin.com/in/geedipalli-vasu-rao/" target='_blank' rel='noopener noreferrer'>
+            <FiLinkedin  size={20} />Linkedin
+          </a>
+          <a className="project-link" href="https://github.com/GeedipalliVasu" target='_blank' rel='noopener noreferrer'>
+            <LuGithub size={18} />GitHub
+          </a>
+        </div>
+        <p className='copyright'>© 2026 Geedipalli Vasu Rao. All rights reserved.</p>
+      </div>
+    </section>
+  </div>
+  );
 }
 
