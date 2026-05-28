@@ -27,7 +27,7 @@ export default function App() {
           <p>Building intelligent systems that solve real-world problems. Specialized in Retrieval-Augmented Generation, Computer Vision, and Deep Learning architectures.</p>
           <div className='button-group'>
             <a className='btn btn-primary' id='projects' href="#projects">View My Work</a>
-            <button className='btn btn-secondary'>Download Resume</button>
+            <a className='btn btn-secondary' href="Vasu_Resume_.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
           </div>
           <div className='social-links'>
             <a href="https://github.com/GeedipalliVasu" target='_blank' rel='noopener noreferrer'>
