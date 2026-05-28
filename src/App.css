@@ -382,3 +382,54 @@ social-links a {
 .skill-icon{
   color: #0D9488;
 }
+
+.education{
+  padding: 6rem 0;
+  padding-left: 10rem;
+  background-color: #FFFFFF;
+}
+
+.education h2{
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color:#1E293B;
+}
+
+.education-list{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.education-item{
+  border-left: 4px solid #0D9488;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  transition: all 0.3s;
+}
+
+.education-item:hover{
+  padding-left: 2.5rem;
+}
+
+.education-item h3{
+  font-size: 1.5rem;
+  color:#1E293B;
+  margin-bottom: 0.5rem;
+}
+
+.institution{
+  color: #0D9488;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.year{
+  font-size: 0.9rem;
+  color: #64748B;
+  margin-bottom: 0.5rem;
+}
+
+.details{
+  color:#64748B;
+}

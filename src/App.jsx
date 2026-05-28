@@ -154,7 +154,7 @@ export default function App() {
               degree:"B.Tech in Computer Science & AI/ML",
               institution: 'Keshav Memorial College of Engineering, Hyderabad',
               year: '2023 – Present',
-              details: 'Relevant Coursework: Deep Learning, Machine Learning'
+              details: "Relevant Coursework: Machine Learning , Deep Learning , LLM's"
             },
             {
               degree: 'Intermediate (PCM)',
