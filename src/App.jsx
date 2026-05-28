@@ -5,6 +5,7 @@ import { LuGithub } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
 import ragimg from "./assets/rag.png"; 
 import agri from "./assets/agri.png";
+import { Brain, Code2, Database } from "lucide-react";
 
 export default function App() {
 
@@ -104,6 +105,51 @@ export default function App() {
             </div>
         </div>
       </div>
+    </section>
+    <section className='skills'>
+      <div className="container">
+        <h2>Technical Skills</h2>
+        <div className="skills-grid">
+          <div className="skill-card">
+            <h3><Brain size={32} className="skill-icon"/>AI & ML</h3>
+            <ul>
+              <li>Machine Learning & Deep Learning</li>
+              <li>NLP & RAG Pipelines</li>
+              <li>Computer Vision & CNNs</li>
+              <li>Diffusion Models</li>
+              <li>Transfer Learning</li>
+              <li>Model Optimization</li>
+            </ul>
+          </div>
+          <div className="skill-card">
+            <h3><Code2 size={32} className="skill-icon"/>Frameworks</h3>
+            <ul>
+              <li>TensorFlow & PyTorch</li>
+              <li>Hugging Face Transformers</li>
+              <li>LangChain & FAISS</li>
+              <li>React.js & Express.js</li>
+              <li>Docker & Kubernetes</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div className="skill-card">
+            <h3><Database size={32} className="skill-icon"/>Languages & DB</h3>
+            <ul>
+              <li>Python, Java, JavaScript</li>
+              <li>SQL & NoSQL Databases</li>
+              <li>MongoDB & MySQL</li>
+              <li>REST APIs</li>
+              <li>Jupyter & VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='education'>
+      <div className="container">
+        <h2>Education</h2>
+      </div>
+
     </section>
     </div>
   )
