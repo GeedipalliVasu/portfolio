@@ -145,12 +145,40 @@ export default function App() {
         </div>
       </div>
     </section>
-    {/* <section className='education'>
+    <section className='education'>
       <div className="container">
         <h2>Education</h2>
-      </div>
-
-    </section> */}
+        <div className="education-list">
+          {[
+            {
+              degree:"B.Tech in Computer Science & AI/ML",
+              institution: 'Keshav Memorial College of Engineering, Hyderabad',
+              year: '2023 – Present',
+              details: 'Relevant Coursework: Deep Learning, Machine Learning'
+            },
+            {
+              degree: 'Intermediate (PCM)',
+              institution: 'Narayana Junior College',
+              year: '2023',
+              details: '85% | Physics, Chemistry, Mathematics',
+            },
+            {
+              degree: 'SSC',
+              institution: 'Narayana Olympiad School',
+              year: '2021',
+              details: '100%',
+            }
+          ].map((edu,idx)=>(
+            <div key={idx} className="education-item">
+              <h3>{edu.degree}</h3>
+              <p className='institution'>{edu.institution}</p>
+              <p className='year'>{edu.year}</p>
+              <p className='details'>{edu.details}</p>
+            </div>
+          ))}
+        </div>
+      </div>                  
+    </section>
     </div>
   )
 }
